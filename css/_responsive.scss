@@ -1,0 +1,18 @@
+@mixin tab{
+    @media only screen  and(max-width:1024px){
+        @content;
+        .navbar-toggler{
+            background-color:#fff !important; 
+        }
+    }
+}
+@mixin iphone{
+    @media only screen  and(max-width:768px){
+        @content;
+    }
+}
+@mixin iphonex{
+    @media only screen  and(max-width:411px){
+        @content;
+    }
+}

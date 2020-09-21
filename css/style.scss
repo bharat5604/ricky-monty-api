@@ -1,0 +1,150 @@
+/*===import===*/
+@import '_responsive';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* ==== Variables ==== */
+$backgroundColor:#1f232a;
+$blackColor:#333333;
+$white:#ffff;
+$yellow:#ce790a;
+
+
+/* === Body === */
+body{
+    background-color: $backgroundColor !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.header{
+    text-align: center;
+    margin: 70px 0 0 0 ;
+    h1{
+        color: #999;
+    }
+
+}
+
+//filter
+.filter{
+    // display: flex;
+    .search{
+        margin: 10px 0px;
+        label{
+            color: #999;
+        }
+        input{
+            box-shadow: inherit !important;
+            background: inherit;
+        }
+    }
+    .sort{
+        text-align: center;
+        color: #999;
+        position: relative;
+        top: 40px;
+        cursor: pointer;
+    }
+    .filter-by-gender{
+        margin: 10px 0px;
+        label{
+            color: #999;
+        }
+        select{
+            box-shadow: inherit !important;
+            background: inherit;
+            // border: ;
+            color: #9999;
+            option{
+                color: #999;
+            }
+        }
+    }
+}
+
+//products
+.products{
+    margin: 50px  0 0 ;
+    .col-6{
+        padding: 0px 10px;
+        @include tab{
+            padding: 8px;
+        }
+    }
+    .in-col{
+        background: $blackColor;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+        margin: 0 0 15px;
+        min-height: 570px;
+        @include tab{
+            min-height: 650px;
+        }
+        .img-part{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .abs-text{
+                position: absolute;
+                z-index: 999;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.63);
+                // color: #999;
+                width: 100%;
+                padding: 10px;
+                h3{
+                    color: $white;
+                    font-size: 16px;
+                    margin: 0 0 5px 0;
+                }
+                span{
+                    color: #999;
+                    font-size: 14px;
+                }
+
+            }
+        }
+        .content-part{
+            padding: 10px;
+            p{
+                display: table;
+                font-size: 14px;
+                border-bottom:1px solid #444;
+                padding: 0px 0 8px;
+                width: 100%;
+                text-transform: capitalize;
+                &:last-child{
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    span{
+                        &:first-child{
+                            width:50px;
+                        }
+                    }
+                }
+                span{
+                    &:first-child{
+                        color: $white;
+                        float: left;
+                        
+                    }
+                    &:last-child{
+                        color: $yellow;
+                        float: right;
+                        text-align: right;
+                        width:107px;
+                        @include tab{
+                            width: 100px;
+                            
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

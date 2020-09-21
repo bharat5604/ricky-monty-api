@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapient</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rick And Morty</h1>
+        </div>
+        <!--Filter start-->
+        <div class="filter">
+            <div class="row">
+                <div class="search col-lg-4 col-md-6 col-12">
+                    <label for="name">Search By Name</label>
+                    <input type="text" name="name" id="name" placeholder="Search By Name" class="form-control">
+
+                </div>
+                <div class="col-lg-4 sort d-none d-lg-block d-md-block">
+                    <p id="sort" class="sortItem">
+                        <label for="sort">Sort By Id</label>
+                        <i class="fa fa-sort"></i>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="filter-by-gender">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="species">Species</label>
+                                <select name="species" id="species" class="form-control">
+                                    
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender" class="form-control">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Filter End-->
+
+        <div class="products">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
